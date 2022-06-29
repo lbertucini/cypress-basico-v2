@@ -226,7 +226,7 @@ describe('CAC-TAT',() => {
            
     }) 
     
-    it('seleciona um arquivo da pasta fixtures' , function () {
+    it('seleciona um arquivo da pasta fixtures ' , function () {
         cy.get('input[type="file"]')
             .selectFile('cypress/fixtures/teste.bmp')
             .then (input => {
