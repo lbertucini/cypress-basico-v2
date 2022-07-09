@@ -2,7 +2,7 @@ describe('Age finder', () => {
     beforeEach(() => {
       const now = new Date('2022-06-16').getTime()
   
-      cy.clock(now) // Freezes date to June 16, 2021
+      cy.clock(now) // Freezes date to June 16, 2022
       cy.visit('https://age-finder.vercel.app/')
     })
   
@@ -32,7 +32,7 @@ describe('Age finder', () => {
       it('singularizes when age is 1', () => {
         cy.setDate('2020-06-16')
   
-        cy.contains('p', "You're 1 year old")
+        cy.contains('p', "You're 1 year old.")
           .should('be.visible')
       })
     })
